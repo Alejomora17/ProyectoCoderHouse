@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contáctame - Alejandro Morales</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="Nav-rigth-section">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/Sobre_mi.html">Sobre Mí</a></li>
+                <li><a href="/pages/Servicios.html">Servicios</a></li>
+                <li><a href="/pages/Portafolio.html">Portafolio</a></li>
+                <li><a href="/pages/contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-grid">
+        <div class="tarjetas-column">
+            <div class="tarjeta">
+                <h2>Contáctame</h2>
+                <p>Completa el siguiente formulario para ponerte en contacto.</p>
+                <form action="mailto:jamoralesvega@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                    <input type="submit" value="Enviar mensaje">
+                </form>
+            </div>
+        </div>
+
+        <div class="visual-column">
+            <img src="/assets/img/contacto.png" alt="Contacto ilustración" class="visual-img">
+        </div>
+    </main>
+
+    <footer class="footer-compact">
+        <div>
+            <p><strong>Juan Alejandro Morales Vega</strong> — Fullstack Developer</p>
+            <p><a href="mailto:jamoralesvega@gmail.com">jamoralesvega@gmail.com</a> | <a
+                    href="https://wa.me/573193610185">WhatsApp</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
