@@ -1,0 +1,38 @@
+body.inicio {
+    background: linear-gradient(120deg, #f5f5f5, #ffffff);
+
+    main.main-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+        /* Centrado vertical */
+        justify-content: center;
+        /* Centrado horizontal */
+    }
+
+    .tarjetas-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .tarjeta {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .visual-column {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 70%;
+            border-radius: 20px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+body.portafolio {
+    background: #f5f5f5;
+
+    main.main-grid {
+        display: flex;
+        justify-content: center;
+        padding: 100px 50px;
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .tarjetas-column {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: transform .3s;
+        width: 300px;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #6A0DAD;
+        }
+
+        p {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .btn {
+            margin-top: 15px;
+        }
+    }
+}

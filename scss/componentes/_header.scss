@@ -1,0 +1,55 @@
+/* Estilos para el header */
+header {
+    background-color: #1B0A2A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px;
+}
+
+/* Menú visible por defecto en escritorio */
+.Nav-rigth-section {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.Nav-rigth-section li a {
+    color: #D8BFD8;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.Nav-rigth-section li a:hover {
+    color: white;
+}
+
+.Nav-rigth-section li a:focus,
+.Nav-rigth-section li a.active {
+    font-weight: bold;
+    color: white;
+}
+
+/* Botón hamburguesa oculto por defecto */
+.hamburguesa {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburguesa .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #D8BFD8;
+    margin: 4px 0;
+}

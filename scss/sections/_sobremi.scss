@@ -1,0 +1,48 @@
+body.sobremi {
+    background: #f5f5f5;
+
+    main.main-grid {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 40px;
+        align-items: flex-start;
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        /* Centrado horizontal */
+        padding: 50px 20px;
+    }
+
+    .tarjetas-column {
+        display: flex;
+        flex-direction: column;
+        border-left: 3px solid #0077b6;
+        padding-left: 20px;
+        gap: 25px;
+    }
+
+    .tarjeta {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: 20px;
+            width: 15px;
+            height: 15px;
+            background: #6A0DAD;
+            border-radius: 50%;
+        }
+    }
+
+    .visual-column img {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+}

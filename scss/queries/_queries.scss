@@ -1,0 +1,109 @@
+/*Menu responsive*/
+@media (max-width: 900px) {
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .Nav-rigth-section {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #ffd9fa;
+        padding: 20px;
+        z-index: 999;
+        text-align: center;
+    }
+
+    .Nav-rigth-section.active {
+        display: flex;
+    }
+
+    .Nav-rigth-section li a {
+        font-weight: bold;
+        color: #3b103b;
+    }
+
+    .hamburguesa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        cursor: pointer;
+    }
+
+    .hamburguesa .bar {
+        background-color: #ffffff;
+        width: 25px;
+        height: 3px;
+        margin: 4px 0;
+    }
+}
+
+/*diseño responsive para paginas de telefono*/
+@media (max-width: 720px) {
+
+    /*INICIO*/
+    body.inicio {
+        .tarjetas-column {
+            grid-template-columns: 1fr;
+        }
+
+        .visual-column {
+            grid-column: span 1;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    /*SOBRE MI*/
+    body.sobremi {
+        main.main-grid {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tarjetas-column {
+            border-left: none;
+            padding-left: 0;
+        }
+
+        .visual-column img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+    }
+
+    /*PORTAFOLIO*/
+    body.portafolio {
+        .tarjetas-column {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tarjeta {
+            width: 90%;
+        }
+    }
+
+    /*SERVICIOS*/
+    body.servicios {
+        .tarjetas-column {
+            flex-direction: column;
+        }
+
+        .tarjeta {
+            max-width: 100%;
+            flex: 1 1 100%;
+        }
+    }
+}

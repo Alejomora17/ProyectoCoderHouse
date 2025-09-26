@@ -1,0 +1,32 @@
+body.servicios {
+    .tarjetas-column {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta {
+        flex: 1 1 calc(33.33% - 20px); // Tres columnas con espacio entre ellas
+        max-width: calc(33.33% - 20px);
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #6A0DAD;
+        }
+
+        .btn {
+            margin-top: 15px;
+        }
+    }
+}

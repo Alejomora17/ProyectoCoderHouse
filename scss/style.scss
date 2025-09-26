@@ -1,0 +1,14 @@
+@use'base/general';
+
+
+@use'componentes/header';
+@use'componentes/footer';
+
+@use'sections/inicio';
+@use'sections/sobremi';
+@use'sections/servicios';
+@use'sections/portafolio';
+@use'sections/contactenos';
+
+@use'base/formulario';
+@use'queries/queries';
